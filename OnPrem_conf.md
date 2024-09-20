@@ -99,5 +99,3 @@
 1. Assurez-vous que les groupes de sécurité permettent la communication entre les instances
 2. Testez l'accès à WordPress depuis l'adresse IP publique du serveur web
 3. Installez et configurez WooCommerce via l'interface d'administration WordPress
-
-N'oubliez pas de documenter toutes les configurations, y compris les adresses IP, les noms d'utilisateur et les mots de passe, car ces informations seront nécessaires lors de la migration.
