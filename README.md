@@ -49,7 +49,7 @@ Pour visualiser l'architecture, nous recommandons de créer un diagramme utilisa
 2. L'environnement cible AWS avec tous les services mentionnés ci-dessus.
 3. Les flux de migration des données et des applications.
 
-[./Migration.png]
+[Migration.png]
 ## Prochaines étapes
 
 1. Configurer l'environnement source selon les instructions fournies.
