@@ -76,10 +76,10 @@ module "target_web_server_sg" {
   egress_rules = ["all-all"]
 }
 
-module "target_database-sg" {
+module "target_database_sg" {
   source = "terraform-aws-modules/security-group/aws"
 
-  name        = "target_database-sg"
+  name        = "target-database-sg"
   description = "Security group for database"
   vpc_id      = module.target_vpc.vpc_id
 
