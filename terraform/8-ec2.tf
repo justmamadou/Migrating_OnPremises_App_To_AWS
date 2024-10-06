@@ -4,10 +4,10 @@ resource "aws_instance" "webserver_source" {
   vpc_security_group_ids = [aws_security_group.webserver_sg_source.id]
   subnet_id = aws_subnet.public_zone1_source.id
 
-  user_data = file("${path.module}/../install_apache2.sh")
+  user_data = file("${path.module}/../Install_wordpress.sh")
 
   tags = {
-    "Name"= "${locals.env1}-${locals.az1}"
+    "Name"= "${local.env1}-${local.az1}"
   }
 }
 
@@ -17,9 +17,9 @@ resource "aws_instance" "webserver_cloud" {
   vpc_security_group_ids = [aws_security_group.webserver_sg_cloud.id]
   subnet_id = aws_subnet.public_zone1_cloud.id
 
-  user_data = file("${path.module}/../install_apache2.sh")
+  user_data = file("${path.module}/../Install_wordpress.sh")
 
   tags = {
-    "Name"= "${locals.env2}-${locals.az2}"
+    "Name"= "${local.env2}-${local.az2}"
   }
 }

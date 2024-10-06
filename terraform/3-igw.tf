@@ -2,15 +2,15 @@ resource "aws_internet_gateway" "igw_source" {
   vpc_id = aws_vpc.source.id
 
   tags = {
-    Name = "${locals.env1}-igw"
+    Name = "${local.env1}-igw"
   }
 }
 
-resource "aws_internet_gateway" "igw_target" {
+resource "aws_internet_gateway" "igw_cloud" {
   vpc_id = aws_vpc.cloud.id
 
   tags = {
-    Name = "${locals.env2}-igw"
+    Name = "${local.env2}-igw"
   }
 }
 

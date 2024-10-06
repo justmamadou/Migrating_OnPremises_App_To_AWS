@@ -1,20 +1,20 @@
 resource "aws_security_group" "webserver_sg_source" {
-  name        = "${locals.env1}-sg"
+  name        = "${local.env1}-sg"
   description = "Allow http, mysql inbound traffic and all outbound traffic"
   vpc_id      = aws_vpc.source.id
 
   tags = {
-    "Name"= "${locals.env1}-sg"
+    "Name"= "${local.env1}-sg"
   }
 }
 
 resource "aws_security_group" "webserver_sg_cloud" {
-  name        = "${locals.env2}-sg"
+  name        = "${local.env2}-sg"
   description = "Allow http, mysql inbound traffic and all outbound traffic"
   vpc_id      = aws_vpc.cloud.id
 
   tags = {
-    "Name"= "${locals.env2}-sg"
+    "Name"= "${local.env2}-sg"
   }
 }
 
