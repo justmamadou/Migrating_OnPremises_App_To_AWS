@@ -13,13 +13,13 @@ sudo systemctl start mysql
 sudo systemctl enable mysql
 
 # Sécurisation de l'installation MySQL
-sudo mysql_secure_installation
+#sudo mysql_secure_installation
 
 # Création de la base de données et de l'utilisateur pour WordPress
-MYSQL_ROOT_PASSWORD="votre_mot_de_passe_root"
+MYSQL_ROOT_PASSWORD="passer"
 WP_DB_NAME="wordpress"
 WP_DB_USER="wpuser"
-WP_DB_PASSWORD="votre_mot_de_passe_wp"
+WP_DB_PASSWORD="passer"
 
 # Connexion à MySQL et exécution des commandes
 sudo mysql -u root -p"${MYSQL_ROOT_PASSWORD}" <<EOF
